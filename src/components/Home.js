@@ -9,7 +9,7 @@ import cwoolwriting from '../images/cwoolwriting.png'
 
 const Home = () => {
     return (
-        <>
+        <div className="min-h-screen">
             <Typography 
                 className="homeheading"
                 variant="h1"
@@ -72,7 +72,7 @@ const Home = () => {
                 </p>
             </div>
             
-        </>
+        </div>
     );
 }
  
