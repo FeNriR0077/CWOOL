@@ -40,7 +40,7 @@ const Home = () => {
             <div className="snowbackground">
                 <img src={cwoolweather} />
                 <h1>
-                    Exclusive Gears and Items for mountain climbing. <a href="#">Get Here.</a>
+                    Exclusive Gears and Items for mountain climbing. <a href="#" className=" hover:underline " >Get Here.</a>
                 </h1>
             </div>
             
@@ -51,7 +51,7 @@ const Home = () => {
                 <div className="summerprev">
                     <img src={cwoolwriting} />
                     <h2>We have some exciting products planned for next summer.  
-                        <a href="#" > Follow Us</a> on socials to get updated.
+                        <a href="#" className=" hover:underline " > Follow Us</a> on socials to get updated.
                     </h2>
                 </div>
             </div>

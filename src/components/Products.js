@@ -27,7 +27,8 @@ const Products = () => {
         {name:"hats", url: "https://images.pexels.com/photos/206481/pexels-photo-206481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
         {name:"mufflers", url: "https://images.pexels.com/photos/6616146/pexels-photo-6616146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
         {name:"boots", url: "https://images.pexels.com/photos/320570/pexels-photo-320570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
-        {name:"dog clothes", url: "https://images.pexels.com/photos/4062187/pexels-photo-4062187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+        {name:"dog clothes", url: "https://images.pexels.com/photos/4062187/pexels-photo-4062187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+        {name:"Climbing Gears", url: "https://images.pexels.com/photos/13449839/pexels-photo-13449839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
     ]
 
     const summerProducts = [
