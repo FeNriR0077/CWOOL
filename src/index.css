@@ -14,7 +14,7 @@
 
 
 body {
-  background-image:linear-gradient(rgb(0,0,0,0.75), rgb(0,0,0,0.75)), url(./images/bgimg.jpg);
+  background-image:linear-gradient(rgb(0,0,0,0.75), rgb(0,0,0,0.75)), url('https://images.pexels.com/photos/102129/pexels-photo-102129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

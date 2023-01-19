@@ -31,9 +31,10 @@ const Products = () => {
     ]
 
     const summerProducts = [
-        {name:"tshirt", url: "https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+        {name:"tshirts", url: "https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
         {name:"shorts", url: "https://images.pexels.com/photos/3228855/pexels-photo-3228855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
-        {name:"Skirts & Frocks", url: "https://images.pexels.com/photos/1140907/pexels-photo-1140907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+        {name:"Skirts & Frocks", url: "https://images.pexels.com/photos/1140907/pexels-photo-1140907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+        {name:"Sun Hats", url: "https://images.pexels.com/photos/755023/pexels-photo-755023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
     ]
 
     const handleLeftArrow =  () => {
@@ -104,10 +105,10 @@ const Products = () => {
                 
                 <div className="summercarousel">
                     <div className="flex justify-between relative">
-                        <div onClick={handleLeftArrow} className="leftarrow inline absolute z-10 left-[5em] top-64 bg-slate-300 bg-opacity-10 hover:bg-opacity-40 hover:cursor-pointer rounded-full text-align-center text-white text-5xl p-6">
+                        <div onClick={handleLeftArrow} className="leftarrow inline absolute z-10 left-[10rem] top-64 bg-slate-300 bg-opacity-10 hover:bg-opacity-40 hover:cursor-pointer rounded-full text-align-center text-white text-5xl p-6">
                             <i className="fa-solid fa-arrow-left"></i>
                         </div>
-                        <div onClick={handleRightArrow} className="rightarrow  inline absolute z-10 top-64 right-[5em] text-end bg-slate-300 rounded-full bg-opacity-10 hover:bg-opacity-40 hover:cursor-pointer text-align-center text-white text-5xl p-6">
+                        <div onClick={handleRightArrow} className="rightarrow  inline absolute z-10 top-64 right-[10rem] text-end bg-slate-300 rounded-full bg-opacity-10 hover:bg-opacity-40 hover:cursor-pointer text-align-center text-white text-5xl p-6">
                             <i className="fa-solid fa-arrow-right"></i>
                         </div>
                     </div>
