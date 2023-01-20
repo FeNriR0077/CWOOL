@@ -484,6 +484,7 @@ footer .copyright {
     background-color: #e2faf6;
     text-align: left;
     padding:0 1em;
+    z-index: 1;
     
   }
 
