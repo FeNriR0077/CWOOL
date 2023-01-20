@@ -437,8 +437,8 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-    border-top: 1px teal solid;
-    border-bottom: 1px teal solid;
+    border-top: 5px teal solid;
+    border-bottom: 5px teal solid;
     padding: 1rem .5rem;
     border-radius: 1em;
   }
