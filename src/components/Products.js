@@ -102,14 +102,14 @@ const Products = () => {
                     )
                 })}
                 
-                <h1 className="summerProductsTitle">Our Summer Products</h1>
+                <h1 className="summerProductsTitle bg-orange-200 rounded-md mt-[7rem]">Our Summer Products</h1>
                 
                 <div className="summercarousel">
                     <div className="flex justify-between relative">
-                        <div onClick={handleLeftArrow} className="leftarrow inline absolute z-10 left-[10rem] top-64 bg-slate-300 bg-opacity-10 hover:bg-opacity-40 hover:cursor-pointer rounded-full text-align-center text-white text-5xl p-6">
+                        <div onClick={handleLeftArrow} className="leftarrow inline absolute z-10 left-[10rem] max-xl:left-2 top-64 bg-slate-300 bg-opacity-10 hover:bg-opacity-40 hover:cursor-pointer rounded-full text-align-center text-white text-5xl p-6">
                             <i className="fa-solid fa-arrow-left"></i>
                         </div>
-                        <div onClick={handleRightArrow} className="rightarrow  inline absolute z-10 top-64 right-[10rem] text-end bg-slate-300 rounded-full bg-opacity-10 hover:bg-opacity-40 hover:cursor-pointer text-align-center text-white text-5xl p-6">
+                        <div onClick={handleRightArrow} className="rightarrow  inline absolute z-10 top-64 right-[10rem] max-xl:right-2  text-end bg-slate-300 rounded-full bg-opacity-10 hover:bg-opacity-40 hover:cursor-pointer text-align-center text-white text-5xl p-6">
                             <i className="fa-solid fa-arrow-right"></i>
                         </div>
                     </div>

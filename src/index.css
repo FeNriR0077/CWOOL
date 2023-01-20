@@ -66,6 +66,8 @@ body {
 .productimage {
   border-radius: 2em;
   overflow: hidden;
+  object-fit: cover;
+  border-radius: 5em;
 }
 
 .clothinglists {
@@ -428,9 +430,39 @@ footer .copyright {
 
 /* -----------------------Responsive mobile design */
 
+@media screen and (max-width: 1280px) {
+
+
+  .listitem , .listitemtwo{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    border-top: 1px teal solid;
+    border-bottom: 1px teal solid;
+    padding: 1rem .5rem;
+    border-radius: 1em;
+  }
+
+  .productimage {
+    margin-bottom: -5rem;
+    height: 300px;
+  }
+
+  .summercarousel {
+    width: 100%;
+  }
+
+  .summerlist {
+    width: 80%;
+  }
+}
+
+
+
 @media screen and (max-width: 800px) {
   .menu, .submenu .menucontainer {
     display: none;
+    
   }
 
   .submenu {

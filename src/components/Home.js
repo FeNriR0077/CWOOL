@@ -21,7 +21,7 @@ const Home = () => {
             </Typography>
 
             <div className="wintercontainer">
-                <h1 className="winterclothing">WINTER CLOTHING <SevereColdIcon fontSize="2em" className="wintericon" /></h1>
+                <h1 className="winterclothing text-center">WINTER CLOTHING <SevereColdIcon fontSize="2em" className="wintericon" /></h1>
                 
             </div>
             
