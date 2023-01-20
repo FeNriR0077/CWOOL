@@ -374,6 +374,7 @@ body {
 .search .searchbox {
   color: black;
   width: 90%;
+  text-transform: capitalize;
 }
 
 .search a:hover {

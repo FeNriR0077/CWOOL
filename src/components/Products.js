@@ -20,6 +20,8 @@ const Products = () => {
     // const classes = useStyles()
 
     const [currentIndex, setCurrentIndex] = useState(0)
+    const [searchValue, setSearchValue] = useState('')
+    let clothList
 
     const clothingProducts = [
         {name:"down jackets", url: "https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
@@ -28,7 +30,7 @@ const Products = () => {
         {name:"mufflers", url: "https://images.pexels.com/photos/6616146/pexels-photo-6616146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
         {name:"boots", url: "https://images.pexels.com/photos/320570/pexels-photo-320570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
         {name:"dog clothes", url: "https://images.pexels.com/photos/4062187/pexels-photo-4062187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
-        {name:"Climbing Gears", url: "https://images.pexels.com/photos/13449839/pexels-photo-13449839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+        {name:"climbing gears", url: "https://images.pexels.com/photos/13449839/pexels-photo-13449839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
     ]
 
     const summerProducts = [
@@ -54,6 +56,20 @@ const Products = () => {
         setCurrentIndex(imageindex)
     }
 
+    const productFilter = clothingProducts.filter((item) => {
+        return (item.name.startsWith(searchValue.toLocaleLowerCase()))
+        
+    })
+
+
+
+    if (searchValue === '') {
+       clothList = clothingProducts
+    } else {
+        clothList = productFilter
+    }
+
+
     return (
         <div className="productcontainer">
             <div className="productone ">
@@ -71,7 +87,9 @@ const Products = () => {
                     variant='standard'
                     label='Search Products'
                     className="searchbox"
+                    inputProps={{style: {textTransform: 'capitalize'}}}
                     autoComplete="false"
+                    onChange={(e) => setSearchValue(e.target.value)}
                 />
                     {/* <SearchIcon
                         className="searchicon"
@@ -85,7 +103,7 @@ const Products = () => {
                             
                         }}
                         variant="outlined"
-                        className="searchbutton"
+                        className="searchbutton" 
                         startIcon={<SearchIcon />}
                     >
                     Search
@@ -96,7 +114,7 @@ const Products = () => {
             <div className="clothinglists relative">
 
                 
-                {clothingProducts.map((item,itemIndex) => {
+                {clothList.map((item,itemIndex) => {
                     return (
                         <Productlist key={itemIndex} item={item} itemIndex={itemIndex} oddeven={itemIndex%2 === 0}/>
                     )
